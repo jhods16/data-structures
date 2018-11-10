@@ -41,4 +41,7 @@ describe('tree', function() {
     expect(tree.contains(8)).to.equal(true);
   });
 
+  it('all trees should be an object', function() {
+    expect(typeof tree).to.equal('object');
+  });
 });

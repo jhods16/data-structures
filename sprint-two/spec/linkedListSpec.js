@@ -51,5 +51,10 @@ describe('linkedList', function() {
     expect(linkedList.contains(4)).to.equal(false);
   });
 
+  it('should have nodes that have a value property', function() {
+    linkedList.addToTail(4);
+    expect(linkedList.tail).to.have.property('value');
+  });
+
   // add more tests here to test the functionality of linkedList
 });

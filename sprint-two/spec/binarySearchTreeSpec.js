@@ -37,4 +37,10 @@ describe('binarySearchTree', function() {
     binarySearchTree.depthFirstLog(func);
     expect(array).to.eql([5, 2, 3, 7]);
   });
+
+  it('should have properties named "left" and "right"', function() {
+    expect(binarySearchTree.right);
+    expect(binarySearchTree.left);
+  });
 });
+
